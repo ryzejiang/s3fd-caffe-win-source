@@ -21,7 +21,7 @@ If CUDA is not installed Caffe will default to a CPU_ONLY build. If you have CUD
 
 
 ## Building only for GPU
-1. **找一个路径，下载 [这个工程](www.baidu.com)。**
+1. **找一个路径，下载 [这个工程](https://github.com/HatGandolf/s3fd-caffe-win-source)。**
     后面都假设把工程下载到了 `D:` 盘，并且解压缩命名为 `caffe-source`；如果用的是`git clone`，那也假设工程的最终路径也是 `D:\\caffe-souce`
 2. **修改 `D:\\caffe-souce\\scripts\\build_win.cmd` 文件里面的内容。**
     使用文本编辑器（或者各种杂七杂八IDE）打开之后，根据你的Python路径修改第25行的内容。由于我的Python是用Anaconda3新建的并且自己命名为了caffe-py27，所以我第25行的内容是`set CONDA_ROOT=C:\ProgramData\Anaconda3\envs\caffe-py27`，根据自己的需要来改就行。如果用的是 Python3，那就修改第 29 行的内容，并且把第 14 行的`if NOT DEFINED PYTHON_VERSION set PYTHON_VERSION=2`中的 2 改成 3。
